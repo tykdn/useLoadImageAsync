@@ -8,9 +8,17 @@ other use.
 ```jsx harmony
 import useLoadImageAsync from "useLoadImageAsync";
 
-const complete = useLoadImageAsync([
-"image_src1","image_src2","image_src3","image_src4","image_src5"
-]);
+function Demo() {
+  const complete = useLoadImageAsync([
+  "image_src1","image_src2","image_src3","image_src4","image_src5"
+  ]);
+  return (
+      <>
+      {complete?<span>loading</span>:<span>loaded</span>}
+      </>
+  )
+}
+
 
 ```
 
