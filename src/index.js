@@ -23,7 +23,7 @@ export default function(imageArray) {
     setIsComplete(true);
   }
   useEffect(() => {
-    loading(imageArray)
+    !isComplete&&loading(imageArray)
       .then(() => {
         handleStatusChange();
       })
