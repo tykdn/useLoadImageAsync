@@ -1,0 +1,22 @@
+{
+  "name": "react-hook",
+  "version": "1.0.0",
+  "description": "React hook lib!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tykdn/useLoadImageAsync.git"
+  },
+  "keywords": [
+    "React","Hook"
+  ],
+  "author": "tykdn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tykdn/useLoadImageAsync/issues"
+  },
+  "homepage": "https://github.com/tykdn/useLoadImageAsync#readme"
+}
