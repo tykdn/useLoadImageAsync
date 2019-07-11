@@ -2,16 +2,30 @@
   "name": "react-hook",
   "version": "1.0.0",
   "description": "React hook lib!",
-  "main": "index.js",
+  "files": [
+    "lib/",
+    "esm/"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn build:cjs && yarn build:es",
+    "build:cjs": "tsc",
+    "build:es": "tsc -m esNext --outDir esm"
+  },
+  "dependencies": {
+    "@types/react": "16.8.19",
+    "react": "^16.8.6",
+    "typescript": "3.5.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tykdn/useLoadImageAsync.git"
   },
   "keywords": [
-    "React","Hook"
+    "React",
+    "Hook"
   ],
   "author": "tykdn",
   "license": "MIT",
